@@ -4,3 +4,6 @@ npm i express mongoose dotenv.
 2.ter 2 terminais rodando (front e Back):
 npm i --save-dev nodemon concurren
 tly
+
+3.Rodar o Server BackEnd:(Fora da pasta BackEnd)
+node BackEnd/server.js 
