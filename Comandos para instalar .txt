@@ -1,0 +1,6 @@
+1.Inicializar o projecto: 
+npm i express mongoose dotenv.
+
+2.ter 2 terminais rodando (front e Back):
+npm i --save-dev nodemon concurren
+tly
