@@ -45,3 +45,35 @@
     background: #8D4DC0;
     color: #f4f4f4;
 }
+
+.sidedrawer__links > li > a > span {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.sidedrawer__cartbadge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #542F75;
+    color: #f4f4f4;
+    font-size: 1rem;
+    margin-left: 8px;
+}
+
+.sidedrawer__links > li > a:hover .sidedrawer__cartbadge {
+    background: #f4f4f4;
+    color: #171717
+}
+
+@media (min-width: 960px) {
+    .sidedrawer {
+        display: none;
+    }
+}
+
