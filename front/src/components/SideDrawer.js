@@ -1,11 +1,12 @@
 import './SideDrawer.css';
 
-const SideDrawer = () => {
-    return (
-        <div className="sidedrawer">
+const SideDrawer = ({show}) => {
+    const sideDrawerClass = ["sidedrawer"];
 
-        </div>
-    )
-}
+    if (show) {
+        sideDrawerClass.push("show");
+    }
+    return <div className={sideDrawerClass.join(" ")}></div>
+};
 
 export default SideDrawer
