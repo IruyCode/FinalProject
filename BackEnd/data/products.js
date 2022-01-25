@@ -49,4 +49,6 @@ const products = [
         countInStock: 15,
     },
 
-]
+];
+
+module.exports = products;
