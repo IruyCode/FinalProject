@@ -1,7 +1,7 @@
 const products = [
     {
         name: "PlayStation 5",
-        imageUrl:
+        imgUrl:
             "https://techprincess.it/wp-content/uploads/2020/07/playstation-5-545x307.jpg",
         descripton:
             "Playstation 5 is awesome.",
@@ -11,7 +11,7 @@ const products = [
 
     {
         name: "PlayStation 4",
-        imageUrl:
+        imgUrl:
             "https://techprincess.it/wp-content/uploads/2020/07/playstation-5-545x307.jpg",
         descripton:
             "Playstation 4 is awesome.",
@@ -21,7 +21,7 @@ const products = [
 
     {
         name: "PlayStation 3",
-        imageUrl:
+        imgUrl:
             "https://techprincess.it/wp-content/uploads/2020/07/playstation-5-545x307.jpg",
         descripton:
             "Playstation 3 is awesoma.",
@@ -31,7 +31,7 @@ const products = [
 
     {
         name: "PlayStation 2",
-        imageUrl:
+        imgUrl:
             "https://techprincess.it/wp-content/uploads/2020/07/playstation-5-545x307.jpg",
         descripton:
             "Playstation 2 is awesome.",
@@ -41,7 +41,7 @@ const products = [
 
     {
         name: "PlayStation 1",
-        imageUrl:
+        imgUrl:
             "https://techprincess.it/wp-content/uploads/2020/07/playstation-5-545x307.jpg",
         descripton:
             "Playstation 1 is awesome.",
