@@ -19,8 +19,8 @@ function App() {
   return (
     <Router>
       <Navbar click={() => setSideToggle(true)}/>
-      <SideDrawer show={sideToggle}/>
-      <Backdrop show={sideToggle}/>
+      <SideDrawer show={sideToggle} click={() => setSideToggle(false)}/>
+      <Backdrop show={sideToggle} click={() => setSideToggle(false)}/>
       <main>
         <Routes>
           <Route exact path="/homescreen" component={HomeScreen}/>
