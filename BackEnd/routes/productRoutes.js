@@ -9,6 +9,6 @@ router.get('/', getAllProducts)
 
 // main purpose of getting all products from database
 // route GET /api/products/:id
-router.get('/:id', getProductById)
+router.get('/product/:id', getProductById) // só com /:id
 
 module.exports = router;
