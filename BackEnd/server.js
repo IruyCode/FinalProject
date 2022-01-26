@@ -13,9 +13,10 @@ const app = express();
 
 app.use(express.json())
 
+
 // now we create or routes
-app.use('/api/products', productRoutes);
+app.use('/api/product', productRoutes);
 
 
-const PORT = process.env.PORT || 3010;
+const PORT = process.env.PORT || 3011;
 app.listen(PORT, () => console.log(`À escuta na porta: ${PORT}`))

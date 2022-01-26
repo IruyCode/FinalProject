@@ -23,7 +23,7 @@ function App() {
       <Backdrop show={sideToggle} click={() => setSideToggle(false)}/>
       <main>
         <Routes>
-          <Route exact path="/homescreen" element={<HomeScreen />} />
+          <Route exact path="/" element={<HomeScreen />} />
           <Route exact path="/product/:id" element={<ProductScreen />} />
           <Route exact path="/cart" element={<CartScreen />} />
         </Routes>

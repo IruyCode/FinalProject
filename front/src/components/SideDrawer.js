@@ -29,7 +29,7 @@ const SideDrawer = ({ show, click }) => {
           </Link>
         </li>
         <li>
-          <Link to="/">Shop</Link>
+          <Link to="/">Shop</Link> {/* havia só / */}
         </li>
       </ul>
     </div>

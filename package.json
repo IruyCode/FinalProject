@@ -2,7 +2,7 @@
   "name": "finalproject",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "Backend/server.js",
   "scripts": {
     "start": "node BackEnd/server.js",
     "server": "nodemon BackEnd/server.js",

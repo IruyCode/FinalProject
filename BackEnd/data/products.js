@@ -3,7 +3,7 @@ const products = [
         name: "PlayStation 5",
         imgUrl:
             "https://techprincess.it/wp-content/uploads/2020/07/playstation-5-545x307.jpg",
-        descripton:
+        description:
             "Playstation 5 is awesome.",
         price: 499,
         countInStock: 15,
@@ -13,7 +13,7 @@ const products = [
         name: "PlayStation 4",
         imgUrl:
             "https://techprincess.it/wp-content/uploads/2020/07/playstation-5-545x307.jpg",
-        descripton:
+        description:
             "Playstation 4 is awesome.",
         price: 399,
         countInStock: 15,
@@ -23,7 +23,7 @@ const products = [
         name: "PlayStation 3",
         imgUrl:
             "https://techprincess.it/wp-content/uploads/2020/07/playstation-5-545x307.jpg",
-        descripton:
+        description:
             "Playstation 3 is awesoma.",
         price: 299,
         countInStock: 15,
@@ -33,7 +33,7 @@ const products = [
         name: "PlayStation 2",
         imgUrl:
             "https://techprincess.it/wp-content/uploads/2020/07/playstation-5-545x307.jpg",
-        descripton:
+        description:
             "Playstation 2 is awesome.",
         price: 199,
         countInStock: 15,
@@ -43,7 +43,7 @@ const products = [
         name: "PlayStation 1",
         imgUrl:
             "https://techprincess.it/wp-content/uploads/2020/07/playstation-5-545x307.jpg",
-        descripton:
+        description:
             "Playstation 1 is awesome.",
         price: 99,
         countInStock: 15,
