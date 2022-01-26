@@ -1,6 +1,6 @@
 import "./ProductScreen.css";
 import { useState, useEffect } from "react";
-import { Routes, Route, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
