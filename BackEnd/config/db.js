@@ -1,9 +1,3 @@
-// dados para o login no MongoDB online
-// email: aluno24325@ipt.pt
-// password: MongoDB3!
-// database: Project0
-// De momento fazendo o comando "node BackEnd/server.js", não é possível ligar ao Cluster "Cluster0" no MongoDB (minutos 20-22 do video)
-
 // For using mongodb
 require('dotenv').config();
 const mongoose = require('mongoose');
