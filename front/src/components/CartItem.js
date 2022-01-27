@@ -1,6 +1,10 @@
 import "./CartItem.css";
 import { Link } from "react-router-dom";
-
+/**
+ * @Description : Página do Card , quando tiver produtos  
+ * 
+ * 
+ */ 
 const CartItem = ({ item, qtyChangeHandler, removeHandler }) => {
   return (
     <div className="cartitem">

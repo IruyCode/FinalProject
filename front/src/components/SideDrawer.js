@@ -31,6 +31,10 @@ const SideDrawer = ({ show, click }) => {
         <li>
           <Link to="/">Shop</Link>
         </li>
+        {/* Imprementar Botao Singin */}
+        <li>
+          SingIn
+        </li>
       </ul>
     </div>
   );
