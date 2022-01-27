@@ -6,7 +6,7 @@ const products = [
         description:
             "The PS5 console unleashes new gaming possibilities that you never anticipated. Experience lightning fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback, adaptive triggers, and 3D Audio*, and an all-new generation of incredible PlayStation games. *3D audio via built-in TV speakers or analog/USB stereo headphones. Set up and latest system software update required.",
         price: 599,
-        countInStock: 15,
+        countInStock: 5,
     },
 
     {
