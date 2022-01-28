@@ -6,8 +6,14 @@ import {PasswordInput} from './PasswordInput';
 import { CheckboxInput } from './CheckboxInput';
 import { useEffect, useState } from "react";
 
+// *** Import Css ***
+import './SingUpActions.css'
 // Colocar Functin Get se precisar 
-
+function getData() {
+  fetch('/api/SingUp',{method:"GET"})
+  .then(response => response.json())
+  .then(data => console.log(data))
+}
 
 
 function useSignupForm() {
@@ -15,12 +21,12 @@ function useSignupForm() {
    *    *** UseState ***
   */
   function getData() {
-    fetch('/list',{method:"GET"})
+    fetch('/api/SingUp',{method:"GET"})
     .then(response => response.json())
     .then(data => setListDb(data))
   }
     const [ListDb, setListDb] = useState([]);
-   
+   console.log(ListDb);
         // Guarda dados do Form 
     const [campo, setCampo] = useState({
         name: '',
@@ -126,8 +132,6 @@ function useSignupForm() {
   /** 
    *    *** Form ***
    */
-  
-  
    export const SingIn = ({onSubmit,Errors}) =>{
   
     const [HaveErrors, setHaveErrors] = useState("");
@@ -150,25 +154,36 @@ function useSignupForm() {
         // SE NAO TIVER ERROS VAI PRA APP.JS VAZIO
         setHaveErrors(1)
         onSubmit(1)
-        //   fetch('/add',{method:"POST",
-        //  headers: {"Content-Type":"application/json"},
-        //  body: JSON.stringify(campo)
-        // })
-        //  .then(response => response.json())
-        //  .then(data =>getData())
+        console.log(campo);
+          fetch('/api/SingUp/success',{method:"POST",
+            headers: {"Content-Type":"application/json"},
+            body: JSON.stringify(campo)
+          })
+          .then(response => response.json())
+          .then(data =>getData())
          
       // Criar um campo para receber estes erros
+
       } else {
         onSubmit(2)
         Errors(existingErrors)
         }
-  
-      
     }
   
     return (
       <div className="container">
-         <form  onSubmit={handleSubmit}> 
+        <div className='frame'>
+          {/* Vai ser Links para SingUp e Login */}
+        <div class="nav">
+          <ul class="links">
+              <li
+              class="signin-active"><a class="btn">Existing User</a></li>
+              <li
+              class="signin-inactive"><a class="btn">Existing User</a></li>
+          </ul>
+          </div>
+
+         <form class="formsingup" onSubmit={handleSubmit}> 
         
           {/* Campo Name*/}
         <NameInput
@@ -221,6 +236,7 @@ function useSignupForm() {
   
            <button type="submit">Submit</button>
         </form>
+        </div>
       </div>
     )
   }

@@ -46,6 +46,7 @@ const ProductScreen = ({ history }) => {
               <p className="left__name">{product.name}</p>
               <p>Price: ${product.price}</p>
               <p>Description: {product.description}</p>
+              {/* <p>Specs: {}</p> */}
             </div>
           </div>
           <div className="productscreen__right">
