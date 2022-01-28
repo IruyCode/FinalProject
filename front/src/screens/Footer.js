@@ -80,7 +80,7 @@ function Footer() {
         </li>
         
         <li>
-          <a href="#">Sitemap</a>
+          <a href="#">About Us</a>
         </li>
       </ul>
     </li>
