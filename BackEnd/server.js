@@ -19,7 +19,8 @@ app.use('/api/product', productRoutes);
 
 // ja funciona , devolve vazio por n tem nenhum ainda
  app.use('/api/SingUp', userRoutes);
-// app.use('/api/Login', userRoutes);
+
+ app.use('/api/login', userRoutes);
 
 
 
