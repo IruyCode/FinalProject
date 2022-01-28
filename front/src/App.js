@@ -7,6 +7,8 @@ import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 import CartScreen from './screens/CartScreen'
 import SingupScreen from './screens/SingUpScreen';
+import Footer from './screens/Footer';
+
 
 // Components
 import Navbar from './components/Navbar';
@@ -32,6 +34,7 @@ function App() {
           <Route exact path="/SingUp" element={<SingupScreen/>} />
         </Routes>
       </main>
+      <Footer />
     </Router>
   );
 }

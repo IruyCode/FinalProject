@@ -11,6 +11,7 @@ connectDB();
 // function to import data to our database
 const importData = async () => {
     try {
+        
         // delete all the products from our database currently
         await Product.deleteMany({});
         // insert everything that is inside our productsData
