@@ -8,7 +8,7 @@ import ProductScreen from './screens/ProductScreen';
 import CartScreen from './screens/CartScreen'
 import SingupScreen from './screens/SingUpScreen';
 import Footer from './screens/Footer';
-import AboutUs from './screens/About us'
+import AboutUss from './screens/About us'
 
 
 // Components
@@ -33,7 +33,7 @@ function App() {
           <Route exact path="/product/:id" element={<ProductScreen />} />
           <Route exact path="/cart" element={<CartScreen />} />
           <Route exact path="/SingUp" element={<SingupScreen/>} />
-          <Route exact path="/about-us" element={<AboutUs/>} />
+          <Route exact path="/about-us" element={<AboutUss/>} />
         </Routes>
       </main>
       <Footer />
