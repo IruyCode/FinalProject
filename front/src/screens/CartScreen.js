@@ -63,10 +63,10 @@ const CartScreen = () => {
             <p>${getCartSubTotal()}</p>
           </div>
           <div>
-            <button className="checkoutBtn">Proceed To Checkout</button>
+            <button className="checkout__button">Proceed To Checkout</button>
           <br/>
           <br/>
-                  <Link to="/" ><button className="continueBtn">Continue Shopping</button></Link>
+                  <Link to="/" ><button className="continue__button">Continue Shopping</button></Link>
           </div>
         </div>
       </div>
