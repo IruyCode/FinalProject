@@ -18,7 +18,7 @@ const Navbar = ({ click }) => {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <h2>Hard2Find.com</h2>
+      <Link to="/" className="logo__link">Hard2Find.com</Link>
       </div>
 
       <ul className="navbar__links">
@@ -29,9 +29,6 @@ const Navbar = ({ click }) => {
               Cart <span className="cartlogo__badge">{getCartCount()}</span>
             </span>
           </Link>
-        </li>
-        <li>
-          <Link to="/" className="shop__link">Shop</Link>
         </li>
         <li>
           <Link to="/signup" className="signup__link">Sign up</Link>
