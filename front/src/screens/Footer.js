@@ -1,4 +1,5 @@
 import './footer.css'
+import './About us.js'
 
 function Footer() {
     return (
@@ -80,7 +81,8 @@ function Footer() {
         </li>
         
         <li>
-          <a href="#">Sitemap</a>
+          <a href="/about-us">About us</a>
+          <aboutUs to="/about-us" className="student"></aboutUs>
         </li>
       </ul>
     </li>
