@@ -1,11 +1,10 @@
 import './About us.css'
 
-const aboutUs = () => {
+const AboutUs = () => {
 
     return (
         <div className="aboutus__screen">
             <div className="about__title">About us</div>
-            <div className="homescreen__products">
                 <div className="student">
                     <p>Ali Visram</p>
                     <p>O meu nome é...</p>
@@ -24,9 +23,8 @@ const aboutUs = () => {
                     <img src="" alt="">
                     </img>
                 </div>
-            </div>
         </div>
     )
 }
 
-export default aboutUs
+export default AboutUs
