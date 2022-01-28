@@ -18,9 +18,10 @@
   }
   
   .footer {
+    font-family: acumin-pro, system-ui, sans-serif;
     display: flex;
     flex-flow: row wrap;
-    padding: 30px 30px 20px 30px;
+    padding: 10px 10px 10px 10px;
     color: #2f2f2f;
     background-color: #b382db;
     border-top: 1px solid #e5e5e5;
@@ -65,7 +66,7 @@
     justify-content: center;
     height: 36px;
     max-width: max-content;
-    background-color: rgb(33, 33, 33, 0.07);
+    background-color: #f4f4f4;
     border-radius: 100px;
     color: #2f2f2f;
     line-height: 0;
@@ -76,6 +77,12 @@
 
   .email_us {
     text-decoration: none;
+  }
+
+  .footer__btn:hover {
+    background-color: #8D4DC0;
+    color: #f4f4f4;
+
   }
   
   .footer ul {
