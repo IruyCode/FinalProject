@@ -4,7 +4,7 @@
   "description": "",
   "main": "Backend/server.js",
   "scripts": {
-    "start": "node BackEnd/server.js",
+    "start": "nodemon BackEnd/server.js",
     "server": "nodemon BackEnd/server.js",
     "client": "npm start --prefix front",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
@@ -17,6 +17,8 @@
     "axios": "^0.25.0",
     "dotenv": "^8.6.0",
     "express": "^4.17.2",
+    "fetch": "^1.1.0",
+    "mongodb": "^4.3.1",
     "mongoose": "^5.13.14"
   },
   "devDependencies": {
