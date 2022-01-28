@@ -81,8 +81,7 @@ function Footer() {
         </li>
         
         <li>
-          <a href="/about-us">About us</a>
-          <aboutUs to="/about-us" className="student"></aboutUs>
+          <a href="#">About Us</a>
         </li>
       </ul>
     </li>
