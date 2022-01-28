@@ -69,3 +69,22 @@
     }
 }
 
+.continueBtn {
+    padding: 10px 17px;
+    width: 100%;
+    background-color: #171717;
+    color: #f4f4f4;
+    border: 1px solid #171717;
+    cursor: pointer;
+}
+
+.continueBtn:hover {
+    background-color: #8D4DC0;
+    color: #f4f4f4;
+}
+
+.checkoutBtn:hover {
+    background-color: #8D4DC0;
+    color: #f4f4f4;
+}
+
