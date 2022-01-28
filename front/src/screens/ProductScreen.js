@@ -71,7 +71,7 @@ const ProductScreen = ({ history }) => {
                 </select>
               </p>
               <p>
-                <button type="button" onClick={addToCartHandler}>
+                <button type="button" onClick={addToCartHandler} className="cart__button">
                   Add To Cart
                 </button>
               </p>
