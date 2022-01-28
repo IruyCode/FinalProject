@@ -44,6 +44,14 @@
     cursor: pointer;
 }
 
+.cart__button {
+    font-weight: 16px;
+}
+
+.addcart__button {
+    font-weight: 16px;
+}
+
 .cartscreen__right div button:hover {
     background-color: #8D4DC0;
     color: #f4f4f4;
