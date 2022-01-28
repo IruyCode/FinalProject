@@ -75,10 +75,6 @@
     padding: 0 1.3em;
   }
 
-  .email_us {
-    text-decoration: none;
-  }
-
   .footer__btn:hover {
     background-color: #8D4DC0;
     color: #f4f4f4;

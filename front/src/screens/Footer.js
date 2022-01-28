@@ -16,7 +16,7 @@ function Footer() {
     <address>
     Casa da Juventude da Tapada das Mercês 2725-531<br/>
           
-      <a class="footer__btn" class="email_us" href="mailto:example@gmail.com">Email Us</a>
+      <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
     </address>
   </div>
   
