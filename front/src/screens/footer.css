@@ -73,6 +73,10 @@
     font-size: 1rem;
     padding: 0 1.3em;
   }
+
+  .email_us {
+    text-decoration: none;
+  }
   
   .footer ul {
     list-style: none;
@@ -149,3 +153,4 @@
       flex: 2 0px;
     }
   }
+
