@@ -6,7 +6,7 @@ import "./AboutUs.css";
  * 
  * 
  */ 
-const AboutUs = ({ imgUrl, description, price, name, productId }) => {
+const AboutUs = ({ imgUrl, description, name}) => {
   return (
     <div className="product">
       <img src={imgUrl} alt={name} />
@@ -15,8 +15,6 @@ const AboutUs = ({ imgUrl, description, price, name, productId }) => {
         <p className="info__name">{name}</p>
 
         <p className="info__description">{description.substring(0, 100)}...</p>
-
-        <p className="info__price">${price}</p>
       </div>
     </div>
   );

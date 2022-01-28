@@ -36,8 +36,9 @@
   }
   
   .footer__logo {
-    font-family: 'Pacifico', cursive;
-    font-weight: 400;
+    font-family: acumin-pro, system-ui, sans-serif;
+    color: #f4f4f4;
+    font-weight: bold;
     text-transform: lowercase;
     font-size: 1.5rem;
   }
@@ -45,11 +46,11 @@
   .footer__addr h2 {
     margin-top: 1.3em;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: bold;
   }
   
   .nav__title {
-    font-weight: 400;
+    font-weight: bold;
     font-size: 15px;
   }
   
@@ -84,6 +85,11 @@
   
   .footer a {
     text-decoration: none;
+    font-weight: 400;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
   }
   
   .footer__nav {
