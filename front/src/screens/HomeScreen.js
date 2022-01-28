@@ -13,7 +13,8 @@ const HomeScreen = () => {
 
   const getProducts = useSelector((state) => state.getProducts);
   const { products, loading, error } = getProducts;
-
+  
+  // Para mostrar os produtos
   useEffect(() => {
     dispatch(listProducts());
   }, [dispatch]);

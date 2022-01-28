@@ -1,21 +1,12 @@
 const products = [
     {
-        name: "PlayStation 5",
-        imgUrl:
-            "https://techprincess.it/wp-content/uploads/2020/07/playstation-5-545x307.jpg",
-        description:
-            "The PS5 console unleashes new gaming possibilities that you never anticipated. Experience lightning fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback, adaptive triggers, and 3D Audio*, and an all-new generation of incredible PlayStation games. *3D audio via built-in TV speakers or analog/USB stereo headphones. Set up and latest system software update required.",
-        price: 599,
-        countInStock: 5,
-    },
-    {
       name: "PlayStation 5",
       imgUrl:
         "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80",
       description:
         "PlayStation 5 (PS5) is a home video game console developed by Sony Interactive Entertainment. Announced in 2019 as the successor to the PlayStation 4, the PS5 was released on November 12, 2020 in Australia, Japan, New Zealand, North America, Singapore, and South Korea, and November 19, 2020 onwards in other major markets except China and India.",
       price: 499,
-      countInStock: 15,
+      countInStock: 5,
     },
     {
       name: "NVIDIA GeForce RTX 3080",

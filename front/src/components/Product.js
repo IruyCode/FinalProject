@@ -1,6 +1,11 @@
 import "./Product.css";
 import { Link } from "react-router-dom";
 
+/**
+ * @Description : Formato dos Produtos no Home  
+ * 
+ * 
+ */ 
 const Product = ({ imgUrl, description, price, name, productId }) => {
   return (
     <div className="product">
