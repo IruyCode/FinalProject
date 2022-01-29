@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import {SingIn} from '../components/SingUp/SingUpActions'
 import {useNavigate} from 'react-router-dom'
 const SingupScreen = () =>{
+  
     // SE ISSO FOR VAZIO DEVOLVE
     const [Errors, setErrors] = useState([]);
     const [CheckSubmit, setCheckSubmit] = useState(0);
@@ -26,9 +27,9 @@ const SingupScreen = () =>{
     
       },[CheckSubmit,Errors])
     
-    
       useEffect(()=>{
       },[RetornErrors])
+      
       const ListRetornErrors = ({RetornErrors}) => {
         // Está dando Warning no console (Verificar)
         return (
