@@ -1,20 +1,26 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { RecebeToken } from "../screens/LoginScreen";
+// Receber os dados do User
 
 /**
  * @Description : NavBar do Site 
  * 
  * 
  */ 
-const Navbar = ({ click }) => {
+  //apenas vai acessar se Logar 
+
+  
+  const Navbar = ({ click }) => {
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
 
   const getCartCount = () => {
     return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
   };
-
+  const recebe = RecebeToken();
+  console.log(recebe);
   return (
     <nav className="navbar">
       <div className="navbar__logo">

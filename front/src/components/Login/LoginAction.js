@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 // Chama essa funcao do SingUp
 import { NameInput } from "../SingUp/NameInput";
-
-export const Login = ({onSubmit,Errors}) =>{
+export const Login = ({onSubmit,Errors,token}) =>{
     // Funcao para Receber dados da DataBase em Tempo Real
     const [campos, setCampos] = useState(
         {email : "",
@@ -11,7 +10,7 @@ export const Login = ({onSubmit,Errors}) =>{
     const [errors, setErrors] = useState("");
     const [ListDb, setListDb] = useState([]);
      // Se existir um user, vai receber o token 
-    const [token, setToken] = useState("");
+    const [tokens, setToken] = useState("");
 
     useEffect(() =>{
         getData()
@@ -21,8 +20,6 @@ export const Login = ({onSubmit,Errors}) =>{
         .then(response => response.json())
         .then(data => setListDb(data))
       }
-        
-        
         // Verificar e Guardar Errors
         useEffect(()=>{
             let Errors = undefined
@@ -31,7 +28,7 @@ export const Login = ({onSubmit,Errors}) =>{
             
             if(conta) 
             { 
-               setToken(conta._id);  
+               setToken(conta);  
             }else {
                 Errors = "Email ou Password não coincidem !"
             }
@@ -52,6 +49,7 @@ export const Login = ({onSubmit,Errors}) =>{
           .filter(v => v !== undefined);
           if (existingErrors.length === 0) {
         onSubmit(1)
+        token(tokens)
           }else {
               onSubmit(2)
               Errors(existingErrors)
@@ -59,6 +57,7 @@ export const Login = ({onSubmit,Errors}) =>{
     }
 
     return (
+
       <div className="container">
         <div className='frame'>
           {/* Vai ser Links para SingUp e Login */}
