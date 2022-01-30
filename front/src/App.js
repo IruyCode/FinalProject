@@ -10,6 +10,7 @@ import SingupScreen from './screens/SingUpScreen';
 import LoginScreen from './screens/LoginScreen';
 import Footer from './screens/Footer';
 import AboutUss from './screens/About us';
+import Checkout from './screens/Checkout';
 
 
 // Components
@@ -36,6 +37,7 @@ function App() {
           <Route exact path="/SingUp" element={<SingupScreen/>} />
           <Route exact path="/login" element={<LoginScreen/>}/>
           <Route exact path="/about-us" element={<AboutUss/>} />
+          <Route exact path="/checkout" element={<Checkout />} />
         </Routes>
       </main>
       <Footer />
