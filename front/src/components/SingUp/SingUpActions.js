@@ -163,7 +163,6 @@ function useSignupForm() {
           .then(data =>getData())
          
       // Criar um campo para receber estes erros
-
       } else {
         onSubmit(2)
         Errors(existingErrors)

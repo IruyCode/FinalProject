@@ -13,10 +13,10 @@ const getAllUsers = async (req, res) => {
     // Recebe Dados do res
 const createUser = async(req,res) => {
      const user = new Users ({
-        nome: req.body.nome,
+        name: req.body.name,
         email: req.body.email,
         password: req.body.password,
-        acceptTerms : req.body.acceptTerms,
+        acceptsTerms : req.body.acceptsTerms,
         })
         // esta dando erro pq n é assincrino 
     user.save((err)=>{

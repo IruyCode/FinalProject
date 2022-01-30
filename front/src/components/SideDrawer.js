@@ -33,7 +33,7 @@ const SideDrawer = ({ show, click }) => {
         </li>
         {/* Implementar Botao Singin */}
         <li>
-          <Link to="/signup">Sign up</Link>
+          <Link to="/SingUp">Sign up</Link>
         </li>
         <li>
           <Link to="/login">Login</Link>

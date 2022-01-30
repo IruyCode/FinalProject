@@ -7,6 +7,8 @@ const {getAllUsers,createUser} = require('../controller/userController');
 router.get('/', getAllUsers)
 
 // Ao Click em Submit ele vem para c
-router.post('/success', createUser) 
+router.post('/success', createUser)
+
+
 
 module.exports = router;
