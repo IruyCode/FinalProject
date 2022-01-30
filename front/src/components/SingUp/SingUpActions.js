@@ -186,7 +186,7 @@ function useSignupForm() {
         
           {/* Campo Name*/}
         <NameInput
-          label="Insert your Name"
+          label="Por favor introduza o seu nome completo"
           name="name"
           campo={campo}
           errors={errors}
@@ -194,7 +194,7 @@ function useSignupForm() {
   
           {/* Campo Email*/}
         <NameInput
-          label="Insert your Email"
+          label="Por favor introduza o seu email"
           name="email"
           campo={campo}
           errors={errors}
@@ -202,7 +202,7 @@ function useSignupForm() {
                 
           {/* Campo Password*/}
         <PasswordInput
-          label="Insert your Password"
+          label="Por favor introduza a sua password"
           name="password"
           showStrength
           campo={campo}
@@ -233,7 +233,7 @@ function useSignupForm() {
   
           {/* Para Submeter */}
   
-           <button type="submit">Submit</button>
+           <button type="submit">Submeter</button>
         </form>
         </div>
       </div>

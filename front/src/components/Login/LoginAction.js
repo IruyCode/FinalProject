@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 // Chama essa funcao do SingUp
 import { NameInput } from "../SingUp/NameInput";
+import './LoginAction.css'
 
 export const Login = ({onSubmit,Errors}) =>{
     // Funcao para Receber dados da DataBase em Tempo Real
@@ -71,10 +72,10 @@ export const Login = ({onSubmit,Errors}) =>{
           </ul>
           </div>
 
-         <form class="formsingup" onSubmit={handleSubmit}> 
+         <form className="formsingup" class="formsingup" onSubmit={handleSubmit}> 
           {/* Campo Email*/}
         <NameInput 
-            label= "Insert your Email"
+            label= "Por favor insira o seu email"
             name="email"
             campo={campos}
             errors = {errors}
@@ -82,14 +83,14 @@ export const Login = ({onSubmit,Errors}) =>{
         />
           {/* Campo Password*/}
         <NameInput 
-            label= "Insert your Password"
+            label= "Por favor insira a sua password"
             name="password"
             campo={campos}
             errors = {errors}
             setCampo={setCampos}
         />
           {/* Para Submeter */}
-           <button type="submit">Submit</button>
+           <button className="submit" type="submit">Login</button>
         </form>
         </div>
       </div>
