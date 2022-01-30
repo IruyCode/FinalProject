@@ -19,6 +19,7 @@
   
   .footer {
     font-family: acumin-pro, system-ui, sans-serif;
+    margin-top: 70px;
     display: flex;
     flex-flow: row wrap;
     padding: 10px 10px 10px 10px;
