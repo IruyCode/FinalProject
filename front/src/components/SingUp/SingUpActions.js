@@ -51,7 +51,7 @@ function useSignupForm() {
         } else if (!validateEmail(campo.email)) {
           emailError = "Por favor introduza um endereço de email válido."
         }else if(ListDb.some((e) => e.email === campo.email)){
-          emailError = "Email já Existente , introduza outro !"
+          emailError = "Email already in use , please choose another one !"
         }
   
         setErrors(err => ({
@@ -70,7 +70,7 @@ function useSignupForm() {
   
           let passwordError = undefined
           if (campo.password.length === 0) {
-              passwordError = "Por favor introduza a sua password."
+              passwordError = "Please enter your password"
           } else if (passwordStrength === 0) {
               passwordError = "A sua password deve ter no mínimo 8 caracteres."
           } else if (passwordStrength < 4) {
@@ -79,9 +79,9 @@ function useSignupForm() {
   
           let passwordConfirmationError = undefined
           if (campo.passwordConfirmation.length === 0) {
-              passwordConfirmationError = "Por favor introduza novamente a sua password."
+              passwordConfirmationError = "Please enter your password again"
           } else if (campo.password !== campo.passwordConfirmation) {
-              passwordConfirmationError = "As passwords não coincidem."
+              passwordConfirmationError = "Passwords do not match. Please try again"
           }
         //  Validação da Confirmação da Password
   
@@ -97,7 +97,7 @@ function useSignupForm() {
         // Validação da aceitação dos Termos
         let acceptsTermsError = undefined
         if (!campo.acceptsTerms) {
-            acceptsTermsError = "Tem de aceitar os termos e condições para criar a sua conta."
+            acceptsTermsError = "You must accept the terms and conditions to create an account"
         }
   
         setErrors(err => ({
@@ -186,7 +186,7 @@ function useSignupForm() {
         
           {/* Campo Name*/}
         <NameInput
-          label="Por favor introduza o seu nome completo"
+          label="Please enter your full name"
           name="name"
           campo={campo}
           errors={errors}
@@ -194,7 +194,7 @@ function useSignupForm() {
   
           {/* Campo Email*/}
         <NameInput
-          label="Por favor introduza o seu email"
+          label="Please enter your email"
           name="email"
           campo={campo}
           errors={errors}
@@ -202,7 +202,7 @@ function useSignupForm() {
                 
           {/* Campo Password*/}
         <PasswordInput
-          label="Por favor introduza a sua password"
+          label="Please enter your password"
           name="password"
           showStrength
           campo={campo}
@@ -214,7 +214,7 @@ function useSignupForm() {
   
           {/* Verifica Password */}
         <PasswordInput
-          label="Introduza novamente a sua password"
+          label="Please check your password"
           name="passwordConfirmation"
           campo={campo}
           errors={errors}
@@ -225,7 +225,7 @@ function useSignupForm() {
   
           {/* Checkbox =>Funciona*/}
         <CheckboxInput
-          label="Li e aceito os Termos e Condições."
+          label="I agree to the terms of service"
           name="acceptsTerms"
           campo={campo}
           errors={errors}
@@ -233,7 +233,7 @@ function useSignupForm() {
   
           {/* Para Submeter */}
   
-           <button type="submit">Submeter</button>
+           <button type="submit">Submit</button>
         </form>
         </div>
       </div>

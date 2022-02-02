@@ -17,7 +17,7 @@ export const PasswordInput = (props) => {
                       value={props.checkPasswordStrength(props.campo[props.name])} />
                 )}  
                  <button type="button" onClick={() => setVisible(v => !v)}>
-                {visible ? 'Ocultar' : 'Mostrar'}
+                {visible ? 'Hide' : 'Show'}
             </button>
         </div>
     )

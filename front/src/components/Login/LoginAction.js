@@ -75,7 +75,7 @@ export const Login = ({onSubmit,Errors}) =>{
          <form className="formsingup" class="formsingup" onSubmit={handleSubmit}> 
           {/* Campo Email*/}
         <NameInput 
-            label= "Por favor insira o seu email"
+            label= "Please enter your email"
             name="email"
             campo={campos}
             errors = {errors}
@@ -83,7 +83,7 @@ export const Login = ({onSubmit,Errors}) =>{
         />
           {/* Campo Password*/}
         <NameInput 
-            label= "Por favor insira a sua password"
+            label= "Please enter your password"
             name="password"
             campo={campos}
             errors = {errors}
