@@ -11,7 +11,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: rgb(189, 189, 189);
-  background: linear-gradient(-45deg, #FFEAEE, #83E8BA, #7C90A0, #424242);
+  background: linear-gradient(-45deg, #A663CC, #B298DC, #B8D0EB, #6F2DBD);
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
   height: auto;
